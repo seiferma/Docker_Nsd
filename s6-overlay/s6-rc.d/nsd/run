@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+exec s6-setuidgid abc /usr/sbin/nsd -c /etc/nsd/nsd.conf -d -p 5353 -u "" -P /run/nsd/nsd.pid

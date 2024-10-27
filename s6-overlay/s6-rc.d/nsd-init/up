@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+foreground { echo "Initializing temporary nsd working directories" }
+/etc/s6-overlay/scripts/init.sh
